@@ -17,7 +17,7 @@ client.on("message", message => {
   const command = args.shift().toLowerCase();
   const modiferValue = parseInt(args[0], 10);
 
-  if (command === "age" && modiferValue !== 0) {
+  if (command === "age" && (modiferValue || modiferValue === 0)) {
     const d1 = Math.floor(Math.random() * 6) + 1;
     const d2 = Math.floor(Math.random() * 6) + 1;
     const dragon = Math.floor(Math.random() * 6) + 1;
