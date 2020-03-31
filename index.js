@@ -42,8 +42,11 @@ client.on('message', (message) => {
       .setFooter('May the dice be ever in your favor');
 
     message.channel.send(embed);
+  } else if (command === 'help' || command === 'h') {
+    const helpText = 'To roll dice, enter the command `!age` followed by the modifier, such as `!age +2`, `!age 2`, or `!age -1`. You cannot change the prefix at this time.';
+    message.channel.send(helpText);
   } else {
-    const errorReply = `Error: make sure you are using a number. Ex: \`${prefix}age 2\`, \`${prefix}age 2\` or \`${prefix}age -1\``;
+    const errorReply = `Error: make sure you are using a number. Ex: \`${prefix}age +2\`, \`${prefix}age 2\` or \`${prefix}age -1\``;
     message.channel.send(errorReply);
   }
 });
