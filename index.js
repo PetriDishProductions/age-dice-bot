@@ -42,7 +42,7 @@ client.on('message', (message) => {
       .setFooter('May the dice be ever in your favor');
 
     message.channel.send(embed);
-  } else if (command === 'help') {
+  } else if (command === 'age' && args[0] === 'help') {
     const helpText = 'To roll dice, enter the command `!age` followed by the modifier, such as `!age +2`, `!age 2`, or `!age -1`. You cannot change the prefix at this time.';
     message.channel.send(helpText);
   } else {
