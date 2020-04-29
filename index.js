@@ -15,7 +15,11 @@ client.on('message', (message) => {
 
   const args = message.content.slice(prefix.length).split(' ');
   const command = args.shift().toLowerCase();
-  const modiferValue = parseInt(args[0], 10);
+  let modiferValue = parseInt(args[0], 10);
+
+  if (typeof modiferValue === 'undefined') {
+    modiferValue = 0;
+  }
 
   if (command === 'age' && modiferValue) {
     const d1 = Math.floor(Math.random() * 6) + 1;
