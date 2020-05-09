@@ -15,10 +15,10 @@ client.on('message', (message) => {
 
   const args = message.content.slice(prefix.length).split(' ');
   const command = args.shift().toLowerCase();
-  let modiferValue = parseInt(args[0], 10);
+  let modiferValue = 0;
 
-  if (typeof modiferValue === 'undefined') {
-    modiferValue = 0;
+  if (args[0] !== null) {
+    modiferValue = parseInt(args[0], 10);
   }
 
   if (command === 'age') {
