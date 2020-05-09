@@ -17,7 +17,7 @@ client.on('message', (message) => {
   const command = args.shift().toLowerCase();
   let modiferValue = 0;
 
-  if (args[0] !== null) {
+  if (args[0] !== null || args[0] !== undefined) {
     modiferValue = parseInt(args[0], 10);
   }
 
