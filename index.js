@@ -11,8 +11,7 @@ const token = process.env.TOKEN;
 client.login(token);
 
 client.on('message', (message) => {
-  if (!message.content.startsWith(prefix) || message.author.bot) return;
-  console.log(message);
+  if (!message.content.startsWith(prefix) || !message.content.startsWith(`${prefix}age`) || message.author.bot) return;
 
   const args = message.content.slice(prefix.length).split(' ');
   const command = args.shift().toLowerCase();
