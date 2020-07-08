@@ -1,9 +1,10 @@
 # age-dice-bot
+
 🎲 🎲 🎲 AGE RPG dice bot for Discord
 
 https://age-dice-bot.carrd.co/
 
-The AGE RPG Dice Bot is a simple bot that rolls 3d6 + modifier, tracks which die is the Dragon die, and gives you an alert if you rolled doubles.
+The AGE RPG Dice Bot is a simple bot that rolls 3d6 + modifier, tracks which die is the Stunt die, and gives you an alert if you rolled doubles.
 
 Good for Dragon AGE, Fantasy AGE, The Expanse, Modern AGE, and more.
 
