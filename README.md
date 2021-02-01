@@ -1,3 +1,7 @@
+# UNSUPPORTED — LOOKING FOR A NEW MAINTAINER
+
+I am unable to give this project the time it needs. I am happy to pass this along to a new maintainer to support and improve upon. Reach out via [this form](https://forms.gle/H7rXGirEAy7BxhFG6)
+
 # age-dice-bot
 
 🎲 🎲 🎲 AGE RPG dice bot for Discord
